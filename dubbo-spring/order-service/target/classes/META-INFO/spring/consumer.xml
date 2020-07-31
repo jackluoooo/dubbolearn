@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+    <!--配置应用名-->
+    <dubbo:application name="order-service"/>
+    <!--配置注册中心-->
+    <dubbo:registry address="N/A"/>
+<!--    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>-->
+    <!--配置服务协议-->
+    <dubbo:reference id="userService" interface="com.luo.service.IUserService" url="dubbo://192.168.1.136:20890/com.luo.service.IUserService" />
+
+</beans>

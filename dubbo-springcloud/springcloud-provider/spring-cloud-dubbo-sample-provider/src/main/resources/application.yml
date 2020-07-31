@@ -1,0 +1,14 @@
+dubbo:
+  application:
+    name: spring-cloud-dubbo-sample
+  protocol:
+    name: dubbo
+    port: 20880
+
+spring:
+  application:
+    name: spring-cloud-dubbo-sample
+  cloud:
+    zookeeper:
+      discovery: true
+      connect-string: 127.0.0.1:2181

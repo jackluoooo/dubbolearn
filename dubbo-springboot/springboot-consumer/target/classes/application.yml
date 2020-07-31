@@ -1,0 +1,12 @@
+dubbo:
+  application:
+    id: springboot-consumer
+    name: springboot-consumer
+  registry:
+    address: zookeeper://127.0.0.1:2181
+server:
+  port: 8081
+
+demo:
+  service:
+    version: 1.0.0
